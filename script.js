@@ -56,7 +56,7 @@ const game = () => {
     let tieCount = 0;
     
     // console.clear()
-    console.log("Let's play " + numberOfGames + " games of Rock, Paper, Scissors, Lizard, Spock!")
+    console.log("Let's play Rock, Paper, Scissors, Lizard, Spock! First to " + numberToWin + " wins!")
     console.log("Scissors cuts Paper, Paper covers Rock.\nRock crushes Lizard, Lizard poisons Spock.\nSpock smashes Scissors, Scissors decapitates Lizard.\nLizard eats Paper, Paper disproves Spock.\nSpock vaporizes Rock, and as it always has, Rock crushes Scissors.")
 
     while(playerScore < numberToWin && computerScore < numberToWin) {
