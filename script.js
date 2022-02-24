@@ -1,5 +1,5 @@
 const OPTIONS = ["Rock", "Paper", "Scissors", "Lizard", "Spock"]
-const numberOfGames = 5
+const numberToWin = 5
 
 const playerChoice = () => {
     let choice = ""
@@ -59,7 +59,7 @@ const game = () => {
     console.log("Let's play " + numberOfGames + " games of Rock, Paper, Scissors, Lizard, Spock!")
     console.log("Scissors cuts Paper, Paper covers Rock.\nRock crushes Lizard, Lizard poisons Spock.\nSpock smashes Scissors, Scissors decapitates Lizard.\nLizard eats Paper, Paper disproves Spock.\nSpock vaporizes Rock, and as it always has, Rock crushes Scissors.")
 
-    for(let i=0; i < numberOfGames; i++) {
+    while(playerScore < numberToWin && computerScore < numberToWin) {
         const player =  playerChoice()
         const computer = computerPlay()
         const round = playRound(player, computer)
@@ -74,9 +74,7 @@ const game = () => {
 
     const pluralTies = tieCount !== 1 ? "ties" : "tie"
     console.log(`Score: Computer ${computerScore}, You ${playerScore}, and ${tieCount} ${pluralTies}`)
-    if (playerScore > computerScore) console.log("You win the game!")
-    else if (playerScore < computerScore) console.log("Computer wins the game!")
-    else console.log("You tied!")
+    playerScore > computerScore ? console.log("You win the game!") : console.log("Computer wins the game!")
 }
 
 
