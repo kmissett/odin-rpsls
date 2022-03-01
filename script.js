@@ -98,9 +98,12 @@ const setupGame = () => {
     tieCount = 0
     playerChoice = ""
     computerChoice = ""
+
     playerScoreDisplay.textContent = playerScore
     computerScoreDisplay.textContent = computerScore
     numberTiesDisplay.textContent = tieCount
+    resultDisplay.textContent = ""
+    
     resetButton.classList.add("display-none")
     resetButton.removeEventListener("click", setupGame)
     playerChoiceButtons.forEach(button => button.addEventListener("click", playRound))
