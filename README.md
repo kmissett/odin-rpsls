@@ -2,7 +2,7 @@
 
 This is another assignment for The Odin Project, though I felt like extending the original assignment a bit. 
 
-Open your browser console to play. Here are the rules: 
+Here are the rules: 
 
 Scissors cuts Paper,  
 Paper covers Rock.  
